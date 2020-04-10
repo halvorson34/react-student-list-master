@@ -5,7 +5,7 @@ class StudentList extends Component {
 render () {
 
 return (
-    <h2>Student List</h2>
+    <h2>Student List git hub list</h2>
 
             <table>
           <thead>
