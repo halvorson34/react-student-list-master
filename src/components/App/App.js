@@ -26,7 +26,7 @@ class App extends Component {
         alert("There was an issue posting your song. Failure.");
       });
   };
-  }
+}
 
   render() {
     return (
