@@ -28,6 +28,13 @@ class App extends Component {
   };
 
   render() {
+    const displayStudents = this.state.studentList.map((student, index) => {
+      return (
+        <div key={index}>
+          <h3>{student}</h3>
+        </div>
+      );
+    });
     return (
       <div className="App">
         <header className="App-header">
