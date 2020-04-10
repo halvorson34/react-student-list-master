@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import './App.css';
-import StudentForm from '../StudentForm/StudentForm';
+import React, { Component } from "react";
+import axios from "axios";
+import "./App.css";
+import StudentForm from "../StudentForm/StudentForm";
+import StudentList from "../StudentList/StudentList";
 
 class App extends Component {
   state = {
@@ -12,7 +13,7 @@ class App extends Component {
   addStudent = (newStudent) => {
     console.log(newStudent);
     // POST your data here
-  }
+  };
 
   render() {
     return (
@@ -20,10 +21,9 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">GitHub Student List</h1>
         </header>
-        <br/>
-        <StudentForm addStudent={this.addStudent}/>
-
-        <p>Student list goes here.</p>
+        <br />
+        <StudentForm addStudent={this.addStudent} />
+        <p>StudentList studentList={this.studentList}</p>
       </div>
     );
   }
