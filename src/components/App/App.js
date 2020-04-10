@@ -16,6 +16,13 @@ class App extends Component {
   };
 
   render() {
+    const displayStudents = this.state.studentList.map((student, index) => {
+      return (
+        <div key={index}>
+          <h3>{student}</h3>
+        </div>
+      );
+    });
     return (
       <div className="App">
         <header className="App-header">
@@ -23,7 +30,7 @@ class App extends Component {
         </header>
         <br />
         <StudentForm addStudent={this.addStudent} />
-        <p>StudentList studentList={this.studentList}</p>
+        <StudentList studentList={this.state.studentList} />
       </div>
     );
   }
